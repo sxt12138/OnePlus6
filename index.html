@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一加首页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="#"><img src="img/logo.jpg"></a>
+		</div>
+		<div class="header_nav">
+			<a href="#">商城</a>
+			<a href="#">服务</a>
+			<a href="#">博客</a>
+			<a href="#">论坛</a>
+		</div>
+		<div class="header_nav_1">
+			<img src="img/denglu3.jpg">
+			<img src="img/denglu2.jpg">
+			<img src="img/denglu.jpg">
+		</div>
+	</div>
+	<div class="column">
+
+		<div class="carousel">
+			<div class="bg">
+          		<img class="focus" src="https://image01.oneplus.cn/shop/201805/17/1916/077c2db86ebae5a34699de4eff9f4f95.jpg" >
+          		<img src="https://image01.oneplus.cn/shop/201806/01/749/31cdecff25e1ae5d9af388070f18926c.jpg">
+         		 <img src="https://image01.oneplus.cn/shop/201805/17/1364/99c46097c5a6fe35cdefa5dcad0bc8ea.jpg">
+         		
+         	</div>
+         	<ul>
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+			</ul>
+        </div>
+	</div>
+	<div class="publicity">
+		<div class="publicity_1">
+			<img src="img/publicity_1.jpg">
+		</div>
+		<div class="publicity_2">
+			<img src="img/publicity_2.jpg">
+		</div>
+		<div class="publicity_3">
+			<img src="img/publicity_3.jpg">
+		</div>
+
+	</div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+	window.onload = function (){
+		let index = 0;
+		let timer = null;
+		function move(){
+			index++;
+			if(index >= $('.carousel img').length){
+				index = 0;
+			}
+			$('.carousel img').eq(index).fadeIn(2000).siblings().fadeOut(2000);
+			$('li').eq(index).addClass('active').siblings().removeClass('active');
+		}
+
+		function autoMove(){
+			timer = setInterval(()=>{
+				move();
+			},3000)
+		}
+
+		autoMove();
+
+		$('.carousel').hover(function(){
+			clearInterval(timer);
+		},function(){
+			autoMove();
+		})
+
+		$('li').each((k,v)=>{
+			$(v).click(function(){
+				index = k;
+				$(this).addClass('active').siblings().removeClass('active');
+				$('.carousel img').eq(index).fadeIn(2000).siblings().fadeOut(2000);
+				
+			})
+		})
+
+
+	}
+
+</script>
