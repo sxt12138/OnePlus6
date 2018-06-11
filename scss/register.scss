@@ -19,13 +19,17 @@ body, html {
 		margin-top:13px; 
 		float: left;
 	}
-	
+	.logo_2{
+		line-height: 60px;
+		padding-left:50px; 
+		margin-top:13px;
+		display: none;
+	}
 	.header_nav{
 		text-align: center;
 		line-height: 60px;
-
 		a{
-			margin: 0 24px;
+			margin: 0 34px;
 			color: #828282;
 			display: inline-block;
 			height: 60px;
@@ -36,6 +40,7 @@ body, html {
 			border-bottom: 2px solid red;
 			box-sizing:border-box;
 		}
+
 	}
 	.header_nav_1
 	{
@@ -45,6 +50,7 @@ body, html {
 	 img{
 		float:right;
 		margin: 0 21px;
+
 	}
 	.tankuang{
 		width: 320px;
@@ -53,28 +59,22 @@ body, html {
 		position: fixed;
 		right:20px;
 		top: 40px;
-		// box-shadow: 5px 5px 10px gray;
+		box-shadow: 5px 5px 10px gray;
 		display: none;
-		z-index: 1;
 		p{
 			height: 48px;
 			border-bottom: 1px solid #828282;
 			color: #828282;
 			font-size: 12px;
 			line-height: 50px;
-			margin: 0 20px;
+			padding: 0 20px;
 		}
 		span{
 			line-height: 100px;
 			padding-left: 20px;
 			color: #0099cc;
 		}
-		 p:hover{
-			color: black;
-		}
-		span:hover{
-			text-decoration: underline;
-		}
+
 	}
 	.tankuang2{
 		width: 320px;
@@ -110,185 +110,65 @@ body, html {
 		}
 	}
 }
-.column{
-	width: 100%;
-	height: 720px;
-	margin: 0 auto;
-	
-	.carousel{
-			width:100%;
-			height:720px;
-			margin:0 auto;
-			position: relative;
-		img{
-			height: 720px;
-			width: 100%;
-			position: absolute;
-			display: none;
-			cursor:pointer;
-		}
-		
-		ul{
-			list-style: none;
-			position: absolute;
-			left:50%;
-			transform: translate(-50%);
-			bottom:20px;
-		}
-		li{
-			float:left;
-			width:20px;
-			height:20px;
-			border-radius: 50%;
-			margin-left:10px;
-			background: #999999;
-			cursor:pointer;
-		}
-			
-
-		.active{
-			background: #d8d8d8;
-		}
-		.focus{
-			display: none;
-		}
-	}	
-}
-.publicity{
-	width: 100%;
-	height: 235px;
-	.publicity_1{
-		height: 235px;
-		float: left;
-	}
-	.publicity_2{
-		height: 235px;
-		float: left;
-	}
-	.publicity_3{
-		height: 235px;
-		float: left;
-	}
-}
-.publicity_two{
-	width: 100%;
-	height: 480px;
+.register{
+	background-color: #f9f9f9;
 	text-align: center;
-	background: url(https://image01.oneplus.cn/shop/201802/11/179/47039da5d4d765e66778fe7c3f222c96.jpg);
-	p{
-		color: #fff;
-		font-size: 35px;
+	h1{
 		text-align: center;
-		padding-top: 180px;
+		padding-top: 57px;
+		margin-bottom: 37px;
 	}
-	span{
+	input{
+		width: 310px;
+		height: 40px;
+		margin-bottom: 12px;
+	}
+	.te{
+		margin-top: 20px;
+		background: #eb0028;
 		color: #fff;
-		margin-top:50px; 
-		font-size: 15px;
-		border: 1px solid #fff;
-		display: inline-block;
-		width: 135px;
-		height: 42px;
-		line-height: 42px;
-		transition:all 1s;	
+		border:1px solid #eb0028;
+		border-radius: 3px;
 	}
-	span:hover{
-			background-color: #fff;
-			color: black;
-		}	
-}
-.introduce{
-	width: 100%;
-	height: 485px;
-	background: #f6f6f6;
-	.introduce_1{
-		float: left;
-		height: 330px;
-		margin-left: 30px;
-		margin-top: 75px;
-		background: #fff;
+	.te:hover{
+		background: #b8001f;
 		transition:all .5s;	
-		p{
-			padding-left: 27px;
-			padding-top: 32px;
-			font-size: 18px;
-			color: black;
-		}
-		span{
-			line-height: 30px;
-			padding-left: 27px;
-			font-size: 12px;
-			color: black;
-		}
 
 	}
-	.introduce_1:hover{
-		box-shadow: 5px 5px 10px gray;
-		transform:scale(1.01);
-	}
-	.introduce_2:hover{
-		transform:scale(1.01);
-		box-shadow: 5px 5px 10px gray;
-	}
-	.introduce_3:hover{
-		transform:scale(1.01);
-		box-shadow: 5px 5px 10px gray;
-	}
-	.introduce_2{
-		background: #fff;
+}
+.link{
+	padding-left: 478px;
+	background: #f9f9f9;
+	.link_1{
 		float: left;
-		margin-top: 75px;
-		margin-left: 22px;
-		transition:all .5s;	
-		p{
-			font-size: 18px;
-			padding-top: 32px;
-			padding-left: 27px;
-			color: black;
-		}
-		span{
-			font-size: 12px;
-			padding-left: 27px;
-			line-height: 30px;
-			color: black;
-
-		}
+		padding-top: 30px;
+		padding-right: 10px;
 	}
-	.introduce_3{
-		background: #fff;
+	p{
+		line-height: 60px;
+		font-size: 12px;
+		color: #666666;
+	}
+	.link_2{
 		float: left;
-		margin-top: 75px;
-		margin-left: 22px;
-		transition:all .5s;	
-		p{
-			padding-top: 32px;
-			padding-left: 27px;
-			font-size: 18px;
-			color: black;
-		}
-		span{
-			line-height: 30px;
-			padding-left: 27px;
-			font-size: 12px;
-			color: black;
-		}
+		padding-left: 210px;
+		margin-top: -30px;
+	}
+	.link_3{
+		margin:0 85px;
 	}
 }
-.guarantee{
-	height: 195px;
-	width: 100%;
-	border-bottom: 1px solid #e2e2e2;
-	.guarantee_1{
-		float: left;
-		margin-top: 46px;
-		padding-left: 190px;
-		p{
-			text-indent: -25px;
-			padding-top: 40px;
-			color: #565b62;
-		}
+.enroll{
+	background: #f9f9f9;
+	text-align: center;
+	padding-bottom: 290px;
+	padding-top: 20px;
+	span{
+		color: #0099cc;
+		font-size: 12px;
+		padding-right: 5px;
+
 	}
-	
 }
 .footer{
 	width: 100%;
@@ -325,7 +205,7 @@ body, html {
 			font-weight: 1;
 			font-size: 26px;
 			color: black;
-			
+
 			padding-bottom: 25px;
 		}
 		p{
@@ -357,8 +237,8 @@ body, html {
 		}
 		#ding{
 			position: absolute;
-			right: 150px;
-			top: 70px;
+			right: 130px;
+			top: 0;
 			display: none; 	
 		}
 	}

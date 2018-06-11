@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OnePlus6</title>
+	<link rel="stylesheet" type="text/css" href="css/OnePlus6.css">
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="#"><img src="img/logo.jpg"></a>
+		</div>
+		<div class="header_nav">
+			<a href="#">商城</a>
+			<a href="#">服务</a>
+			<a href="#">博客</a>
+			<a href="#">论坛</a>
+		</div>
+		<div class="header_nav_1">
+			<a href="#"><img  src="img/denglu3.jpg"></a>
+			<a href="#"><img id="huaguo2" src="img/denglu2.jpg"></a>
+			<a href="#"><img id="huaguo1" src="img/denglu.jpg"></a>
+		</div>
+		<div id="chuxian1" class="tankuang">
+			<a href="#"><p>订单</p></a>
+			<a href="#"><p>账户</p></a>
+			<a href="#"><p>推荐有礼</p></a>
+			<a href="#"><span>登录</span></a>
+		</div>
+		<div id="chuxian2" class="tankuang2">
+			<span>您的购物车里没有商品</span>
+			<a href="register.html" target="_blank"><p>去购物</p></a>
+		</div>
+	</div>
+	<div id="" class="column">
+		<a href="#"><span>OnePlus 6</span></a>
+		<a href="#"><span>概述</span></a>
+		<a href="#"><span id="y1">参数</span></a>
+		<div class="column_1">
+			<a href="#"><p>购买</p></a>
+		</div>
+	</div>
+	<div class="content">
+		<img src="img/quan1.jpg">
+	</div>
+	<div class="video">
+		<div class="video1">
+			<img id="wei1" src="img/shipin1.png">
+			<a href="#"><img id="zhezhao1" src="img/zhezhao1.png"></a>		
+		</div>
+		<div class="video2">
+			<img id="wei2" src="img/shipin2.png">
+			<a href="#"><img id="zhezhao2" src="img/zhezhao2.png"></a>
+		</div>
+		<img id="bofang" class="bofang" src="img/bofang.png">
+		<img id="bofang1" class="bofang1" src="img/bofang.png">
+	</div>
+	<div class="introduce">
+		<div class="introduce1">
+		<p>性能、体验</p>
+		<h1>够强劲，才尽兴。</h1>
+		<span>全新 OnePlus 6 搭载骁龙™ 845，性能比上一代提升 30%。最高 8GB 四通道 LPDDR4X 大内存+256GB UFS2.1 双通道超大闪存*，App 运行更流畅。令人羡慕的强悍配置之外，还对 50 余款热门游戏进行特别优化，让你的游戏体验，更畅快，更尽兴。</span>
+		<a href="#">了解更多</a>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+		window.onload = function(){
+		go();
+		gie();
+		appear();
+		appear1();
+	}
+	function go(){
+	let g = document.getElementById("huaguo1");
+	let h = document.getElementById("chuxian1");
+	g.onmouseover = function(){
+		h.style.display = "block";
+	}
+	g.onmouseout = function(){
+		h.style.display = "none";
+	}
+	h.onmouseover = function(){
+		h.style.display = "block";
+	}
+	h.onmouseout = function(){
+		h.style.display = "none";
+	}
+}
+function gie(){
+	let g = document.getElementById("huaguo2");
+	let h = document.getElementById("chuxian2");
+	g.onmouseover = function(){
+		h.style.display = "block";
+	}
+	g.onmouseout = function(){
+		h.style.display = "none";
+	}
+	h.onmouseover = function(){
+		h.style.display = "block";
+	}
+	h.onmouseout = function(){
+		h.style.display = "none";
+	}
+}
+	function appear(){
+	let g = document.getElementById("wei1");
+	let h = document.getElementById("zhezhao1");
+	let i = document.getElementById("bofang");
+	g.onmouseover = function(){
+		h.style.display = "block";
+	}
+	g.onmouseout = function(){
+		h.style.display = "none";
+	}
+	h.onmouseover = function(){
+		i.style.display = "block";
+		h.style.display = "block";
+	}
+	h.onmouseout = function(){
+		i.style.display = "none";
+		h.style.display = "none";
+	}
+}
+	function appear1(){
+	let g = document.getElementById("wei2");
+	let h = document.getElementById("zhezhao2");
+	let i = document.getElementById("bofang1");
+	g.onmouseover = function(){
+		h.style.display = "block";
+	}
+	g.onmouseout = function(){
+		h.style.display = "none";
+	}
+	h.onmouseover = function(){
+		i.style.display = "block";
+		h.style.display = "block";
+	}
+	h.onmouseout = function(){
+		i.style.display = "none";
+		h.style.display = "none";
+	}
+}
+</script>
