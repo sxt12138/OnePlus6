@@ -30,7 +30,7 @@ body, html {
 		line-height: 60px;
 
 		a{
-			margin: 0 34px;
+			margin: 0 20px;
 			color: #828282;
 			display: inline-block;
 			height: 60px;
@@ -52,4 +52,279 @@ body, html {
 		margin: 0 21px;
 
 	}
+		.tankuang{
+		width: 320px;
+		height: 270px;
+		background: #fff;
+		position: fixed;
+		right:20px;
+		top: 40px;
+		box-shadow: 5px 5px 10px gray;
+		display: none;
+		p{
+			height: 48px;
+			border-bottom: 1px solid #828282;
+			color: #828282;
+			font-size: 12px;
+			line-height: 50px;
+			padding: 0 20px;
+		}
+		span{
+			line-height: 100px;
+			padding-left: 20px;
+			color: #0099cc;
+		}
+
+	}
+	.tankuang2{
+		width: 320px;
+		height: 186px;
+		position: fixed;
+		background: #fff;
+		right:0px;
+		top: 40px;
+		text-align: center;
+		z-index: 1;
+		display: none;
+		span{
+			color: #999999;
+			font-size: 12px;
+			padding-right: 10px;
+			line-height: 115px;
+		}
+		p{
+			width: 280px;
+			height: 40px;
+			color: #999999;
+			font-size: 14px;
+			color: #fff;
+			border: 1px solid #eb0028;
+			border-radius: 5px;
+			background: #eb0028;
+			line-height: 40px;
+			margin: 0 20px;
+			transition:all 1s;
+		}
+		p:hover{
+			background-color:#b8001f; 
+		}
+	}
+}
+.classify{
+	width: 100%;
+	height: 120px;
+	background: #cccccc;
+	.box{
+		width: 800px;
+		height: 120px;
+		margin: 0 auto;
+		padding-top: 15px;
+		.box1{
+			width: 50px;
+			height: 92px;
+			float: left;
+			margin: 0 35px;
+			text-align: center;	
+			p{
+				display:inline-block;
+				// line-height: 70px;
+				font-size: 12px;
+				padding-right: 6px;
+			}
+		}			
+		// text-align: center;
+		#classify_1{
+			transition:all .5s;
+
+		}
+		.classify_1{
+		
+			width: 40px;
+			height: 40px;
+			float: left;
+			border: 1px solid #f1f1f1;
+			border-radius: 50%;
+			background:#cccccc;
+			background: url(../img/zhenghe.png) no-repeat;
+			background-position: 0px -451px;
+			transition:all .5s;
+		}
+		.classify_1:hover{
+			background-position: 0px -411px;
+		}
+		.classify_2{
+			p{
+				display:inline-block;
+				// line-height: 70px;
+				padding: 0 22px;
+				padding-left: 30px;
+			}
+			width: 40px;
+			float: left;
+			height: 40px;
+			border-radius: 50%;
+			border: 1px solid #f1f1f1;
+			background:#cccccc;
+			background: url(../img/zhenghe.png) no-repeat;
+			background-position: 0px -38px;
+			transition:all .5s;
+		}
+		.classify_2:hover{
+			background-position: 0px 4px;
+		}
+		.classify_3{
+			p{
+			}
+			float: left;
+			width: 40px;
+			border: 1px solid #f1f1f1;
+			height: 40px;
+			border-radius: 50%;
+			background:#cccccc;
+			background: url(../img/zhenghe.png) no-repeat;
+			background-position: 0px -286px;
+			transition:all .5s;
+		}
+		.classify_3:hover{
+			background-position: 0px -246px;
+		}
+		.classify_4{
+			p{
+				display:inline-block;
+				// line-height: 70px;
+				padding: 0 22px;
+				padding-left: 30px;
+			}
+			float: left;
+			width: 40px;
+			border: 1px solid #f1f1f1;
+			height: 40px;
+			border-radius: 50%;
+			background:#cccccc;
+			background: url(../img/zhenghe.png) no-repeat;
+			background-position: 0px -204px;
+			transition:all .5s;
+		}
+		.classify_4:hover{
+			background-position: 0px -164px;
+		}
+
+		.classify_5{
+			p{
+				display:inline-block;
+				// line-height: 70px;
+				padding: 0 22px;
+				padding-left: 30px;
+			}
+			float: left;
+			width: 40px;
+			border: 1px solid #f1f1f1;
+			height: 40px;
+			border-radius: 50%;
+			background:#cccccc;
+			background: url(../img/zhenghe.png) no-repeat;
+			background-position: 0px -124px;
+			transition:all .5s;	
+
+		}
+		.classify_5:hover{
+			background-position: 0px -83px;
+		}
+		.classify_6{
+			p{
+				display:inline-block;
+				// line-height: 70px;
+				padding: 0 22px;
+				padding-left: 30px;
+			}
+			float: left;
+			width: 40px;
+			border: 1px solid #f1f1f1;
+			height: 40px;
+			border-radius: 50%;
+			background:#cccccc;
+			background: url(../img/zhenghe.png) no-repeat;
+			transition:all .5s;	
+			background-position: 0px -368px;
+		}
+		.classify_6:hover{
+			background-position: 0px -327px;
+		}
+	}	
+}
+.nav{
+	width: 100%;
+	height: 400px;
+	a{	
+		width: 100%;
+		height: 400px;
+		display: block;
+    	background: url(https://image01.oneplus.cn/shop/201805/17/833/de01425aa2c3303dd2a8b4b04abb3cbe.jpg) center top no-repeat;
+	}
+}	
+.category{
+	width: 100%;
+	height: 354px;
+	padding:60px 0 ;
+	img{
+		padding:0 15px;
+	}
+}
+.title{
+	width: 100%;
+	height:50px;
+	background: #f1f1f1;
+	line-height: 50px;
+	padding-bottom: 10px;
+	h1{
+		font-weight:400;
+	}
+}
+.title_1{
+	width: 100%;
+	height:850px;
+	background:  #f1f1f1;
+	.title_1_1:hover{
+		box-shadow: 5px 5px 10px gray;
+		transform:scale(1.01);
+	}
+	.title_1_1{
+		transition:all .2s;	
+
+		background: #fff;
+		width: 285px;
+		height: 300px;
+		float: left;
+		padding-bottom: 50px;
+		margin-top: 50px;
+		margin-left: 47px;
+		text-align: center;
+		img{
+			width: 183px;
+			width: 183px;
+			margin: 0 auto;
+		}
+		h3{
+			line-height: 1.8;
+			font-size: 14px;
+   	 		margin: 20px 20px 8px;
+    		white-space: nowrap;
+    		overflow: hidden;
+    		font-weight: 100;
+    		text-overflow: ellipsis;
+		}
+		ul{
+			padding-left: 110px;
+			padding-bottom: -20px;
+			float: left;
+			list-style: none;
+			img{
+				width: 10px;
+				height: 10px;
+				padding: 0 10px;
+			}
+		}
+
+	}
+
 }

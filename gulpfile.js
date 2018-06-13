@@ -19,8 +19,7 @@ gulp.task("copyimg",function(){
 //压缩js
 gulp.task("uglifyjs",function(){
 	gulp.src("js/*.js")
-	.pipe(uglify())
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\web1802\\js"));	
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\OnePlus6\\js"));	
 });
 
 //sass编译

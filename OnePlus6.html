@@ -32,7 +32,7 @@
 			<a href="register.html" target="_blank"><p>去购物</p></a>
 		</div>
 	</div>
-	<div id="" class="column">
+	<div id="column" class="column">
 		<a href="#"><span>OnePlus 6</span></a>
 		<a href="#"><span>概述</span></a>
 		<a href="#"><span id="y1">参数</span></a>
@@ -220,6 +220,7 @@
 		gie();
 		appear();
 		appear1();
+		fixation();
 	}
 	function go(){
 	let g = document.getElementById("huaguo1");
@@ -289,6 +290,15 @@ function gie(){
 	h.onmouseout = function(){
 		i.style.display = "none";
 		h.style.display = "none";
+	}
+}
+window.onscroll=function(){
+	let g =document.getElementById("column");
+	let t = document.documentElement.scrollTop || document.body.scrollTop; 
+	if (t>60){
+		g.style.position = "fixed";
+	}else if(t<60){
+		g.style.position = "";
 	}
 }
 </script>
