@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>登录页面</title>
-	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-	<div class="header">
+<div class="header">
 		<div class="logo">
 			<a href="#"><img src="img/logo.jpg"></a>
 		</div>
@@ -33,13 +33,15 @@
 		</div>
 	</div>
 	<div class="register">
-		<h1>登录</h1>
-		<form method="post" action="oneplus.php">
-		<input id="username" type="text" placeholder="手机/邮箱/用户名" name="username"><br/>
-		<input id="userpass" type="password" placeholder="密码"
+		<h1>注册</h1>
+		<input type="text" placeholder="手机号" name="username"><br/>
+		<input type="password" placeholder="密码"
 		name="userpass"><br/>
-		<input id="btn" class="te" type="button" value="确定">
-		</form>
+	<div id="yanzheng" class="yanzheng">
+		<span>请按住滑块，拖动到最右边</span>
+		<span id="huakuai" class="huakuai">>></span>
+	</div>
+		<input class="te" type="submit" value="创建账号">
 	</div>
 	<div class="link">
 		<img class="link_1" src="img/xian.jpg">
@@ -112,29 +114,5 @@
 	</div>
 </body>
 </html>
-<script src="js/register.js"></script>
-<script type="text/javascript">
-	function $(id){
-		return document.getElementById(id);
-	}
-window.onload=function(){
-	$("btn").onclick=function(){
-		let xhr=new XMLHttpRequest();
-		xhr.open("post","oneplus.php",true);
-		xhr.onreadystatechange=function(){
-			if(xhr.readyState==4 && xhr.status==200){
-				if(xhr.responseText=="1"){
-					// saveCookie("username",$("username").value,7);
-					location.href="index.html";
-				}else{
-					alert("用户名或者密码不对，请重新输入！")
-				}
-			}
-		}
-		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		let sendstr = "username="+$("username").value+"&userpass="+$("userpass").value;
-		xhr.send(sendstr);
-	}
-}
-
-</script>
+<script src="js/login.js"></script>
+ 
