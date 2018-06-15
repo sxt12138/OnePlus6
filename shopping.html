@@ -38,27 +38,27 @@
 			<div class="box1">
 				<div id="classify_1" class="classify_1"></div>
 				<br/>
-				<p>手机</p>
+				<a href="#"><p>手机</p></a>
 			</div>
 			<div class="box1">
-				<div id="classify_1" class="classify_2"></div>
-				<p>耳机</p>
+				<div id="classify_2" class="classify_2"></div>
+				<a href="#"><p>耳机</p></a>
 			</div>
 			<div class="box1">
-				<div id="classify_1" class="classify_3"></div>
-				<p>壳/膜</p>
+				<div id="classify_3" class="classify_3"></div>
+				<a href="#"><p>壳/膜</p></a>
 			</div>
 			<div class="box1">
-				<div id="classify_1" class="classify_4"></div>
-				<p>适配器/数据线</p>
+				<div id="classify_4" class="classify_4"></div>
+				<a href="#"><p>适配器/数据线</p></a>
 			</div>
 			<div class="box1">
-				<div id="classify_1" class="classify_5"></div>
-				<p>套装</p>
+				<div id="classify_5" class="classify_5"></div>
+				<a href="#"><p>套装</p></a>
 			</div>
 			<div class="box1">
-				<div id="classify_1" class="classify_6"></div>
-				<p>生活馆</p>
+				<div id="classify_6" class="classify_6"></div>
+				<a href="#"><p>生活馆</p></a>
 			</div>
 		</div>
 	</div>
@@ -183,50 +183,4 @@
 	</div>
 </body>
 </html>
-<script type="text/javascript">
-	window.onload = function(){
-		go();
-		gie();
-	}
-	function go(){
-	let g = document.getElementById("huaguo1");
-	let h = document.getElementById("chuxian1");
-	g.onmouseover = function(){
-		h.style.display = "block";
-	}
-	g.onmouseout = function(){
-		h.style.display = "none";
-	}
-	h.onmouseover = function(){
-		h.style.display = "block";
-	}
-	h.onmouseout = function(){
-		h.style.display = "none";
-	}
-}
-function gie(){
-	let g = document.getElementById("huaguo2");
-	let h = document.getElementById("chuxian2");
-	g.onmouseover = function(){
-		h.style.display = "block";
-	}
-	g.onmouseout = function(){
-		h.style.display = "none";
-	}
-	h.onmouseover = function(){
-		h.style.display = "block";
-	}
-	h.onmouseout = function(){
-		h.style.display = "none";
-	}
-}
-window.onscroll=function(){
-	let g =document.getElementById("classify");
-	let t = document.documentElement.scrollTop || document.body.scrollTop; 
-	if (t>60){
-		g.style.position = "fixed";
-	}else if(t<60){
-		g.style.position = "";
-	}
-}
-</script>
+<script src="js/shopping.js"></script>
